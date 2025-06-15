@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Arizona State Records</title>
+
+  <style>
+
+    :root {
+
+      --navy: #0a233d;
+
+      --tan: #f4e9dc;
+
+      --accent: #c27f41;
+
+      --link: #0645ad;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background: var(--tan);
+
+      color: var(--navy);
+
+    }
+
+    header {
+
+      background: var(--navy);
+
+      color: white;
+
+      padding: 1rem;
+
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+    }
+
+    header img.logo {
+
+      height: 60px;
+
+      margin-right: 1rem;
+
+    }
+
+    header h1 {
+
+      flex: 1 1 auto;
+
+      font-size: 1.8rem;
+
+      margin: 0;
+
+    }
+
+    nav {
+
+      width: 100%;
+
+      margin-top: 0.5rem;
+
+      text-align: center;
+
+    }
+
+    nav a {
+
+      margin: 0 0.7rem;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+    main {
+
+      padding: 2rem;
+
+      max-width: 1400px;
+
+      margin: auto;
+
+    }
+
+    section {
+
+      margin-bottom: 2.5rem;
+
+    }
+
+    h2 {
+
+      border-bottom: 3px solid var(--accent);
+
+      padding-bottom: 0.4rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+      gap: 1rem;
+
+    }
+
+    .card {
+
+      background: white;
+
+      border-radius: 6px;
+
+      padding: 1rem;
+
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+      transition: transform 0.1s ease-in-out;
+
+    }
+
+    .card:hover {
+
+      transform: translateY(-2px);
+
+    }
+
+    .card h3 {
+
+      margin-top: 0;
+
+    }
+
+    ul {
+
+      list-style: none;
+
+      padding-left: 0;
+
+    }
+
+    li {
+
+      margin-bottom: 0.6rem;
+
+    }
+
+    a {
+
+      color: var(--link);
+
+      text-decoration: none;
+
+    }
+
+    a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    footer {
+
+      background: var(--navy);
+
+      color: white;
+
+      text-align: center;
+
+      padding: 1rem;
+
+      font-size: 0.9rem;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+  <img src="logo.png" alt="Arizona State Records Logo" class="logo" />
+
+  <h1>Arizona State Records</h1>
+
+  <nav>
+
+    <a href="#courts">Courts</a>
+
+    <a href="#counties">Counties</a>
+
+    <a href="#police">Police</a>
+
+    <a href="#foia">FOIA</a>
+
+    <a href="#library">Law Library</a>
+
+    <a href="#resources">More</a>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+
+<section id="courts">
+
+  <h2>🧑‍⚖️ Arizona Courts & Case Filings</h2>
+
+  <div class="grid">
+
+    <div class="card"><h3>Arizona Supreme Court</h3><a href="https://www.azcourts.gov/">Visit →</a></div>
+
+    <div class="card"><h3>AZ Court of Appeals</h3><a href="https://www.azcourts.gov/coa">Visit →</a></div>
+
+    <div class="card"><h3>Maricopa Superior Court</h3><a href="https://superiorcourt.maricopa.gov/">Visit →</a></div>
+
+    <div class="card"><h3>Pima Superior Court</h3><a href="https://www.sc.pima.gov/">Visit →</a></div>
+
+    <div class="card"><h3>AZ District Bankruptcy Court</h3><a href="https://www.azb.uscourts.gov/">Visit →</a></div>
+
+    <div class="card"><h3>PACER / ECR Access</h3><a href="https://pacer.uscourts.gov/">Visit →</a></div>
+
+  </div>
+
+</section>
+
+
+
+<section id="counties">
+
+  <h2>🏜️ Arizona County Recorder & Assessor Offices</h2>
+
+  <div class="grid">
+
+    <div class="card"><h3>Maricopa County Records</h3><a href="https://recorder.maricopa.gov/">Visit →</a></div>
+
+    <div class="card"><h3>Pima County Recorder</h3><a href="https://www.recorder.pima.gov/">Visit →</a></div>
+
+    <div class="card"><h3>Coconino County</h3><a href="https://www.coconino.az.gov/118/Recorder">Visit →</a></div>
+
+    <div class="card"><h3>Yavapai County</h3><a href="https://yavapaiaz.gov/recorder">Visit →</a></div>
+
+    <div class="card"><h3>Gila County</h3><a href="https://www.gilacountyaz.gov/">Visit →</a></div>
+
+    <div class="card"><h3>Full County List</h3><a href="https://azcounties.org/">Visit →</a></div>
+
+  </div>
+
+</section>
+
+
+
+<section id="police">
+
+  <h2>🚓 Police Departments & Jail Records</h2>
+
+  <div class="grid">
+
+    <div class="card"><h3>Phoenix Police</h3><a href="https://www.phoenix.gov/police">Visit →</a></div>
+
+    <div class="card"><h3>Maricopa County Sheriff</h3><a href="https://www.mcso.org/">Visit →</a></div>
+
+    <div class="card"><h3>Tucson Police Records</h3><a href="https://www.tucsonaz.gov/police/records">Visit →</a></div>
+
+    <div class="card"><h3>AZ Department of Corrections</h3><a href="https://corrections.az.gov/">Visit →</a></div>
+
+    <div class="card"><h3>Inmate Search</h3><a href="https://vinelink.vineapps.com/search/AZ/Person">Visit →</a></div>
+
+  </div>
+
+</section>
+
+
+
+<section id="foia">
+
+  <h2>📋 Public Records & FOIA Requests</h2>
+
+  <ul>
+
+    <li><a href="https://www.azag.gov/records">AZ Attorney General FOIA</a></li>
+
+    <li><a href="https://azdot.gov/foia">Arizona DOT FOIA</a></li>
+
+    <li><a href="https://www.phoenix.gov/pio/public-records">Phoenix Records Requests</a></li>
+
+    <li><a href="https://azgfd.gov/">AZ Game & Fish FOIA</a></li>
+
+  </ul>
+
+</section>
+
+
+
+<section id="library">
+
+  <h2>📚 Law Libraries & Academic Legal Help</h2>
+
+  <ul>
+
+    <li><a href="https://law.asu.edu/library">ASU Ross-Blakley Law Library</a></li>
+
+    <li><a href="https://lawlibrary.maricopa.gov/">Maricopa Law Library</a></li>
+
+    <li><a href="https://www.azcourts.gov/publicaccess">Public Access to Court Info</a></li>
+
+  </ul>
+
+</section>
+
+
+
+<section id="resources">
+
+  <h2>🌐 More Resources</h2>
+
+  <ul>
+
+    <li><a href="https://www.azcc.gov/">Arizona Corporation Commission</a></li>
+
+    <li><a href="https://azdor.gov/">Arizona Tax Records</a></li>
+
+    <li><a href="https://www.azleg.gov/">AZ Legislative Info</a></li>
+
+    <li><a href="https://www.azsos.gov/">AZ Secretary of State</a></li>
+
+  </ul>
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+  &copy; 2025 Arizona State Records — “Your Gateway to Public Records in Arizona.” All rights reserved.
+
+</footer>
+
+
+
+</body>
+
+</html>
